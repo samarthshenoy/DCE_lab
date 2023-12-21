@@ -1,0 +1,19 @@
+import os
+print("operating system:",os.name)
+print("working directory:",os.getcwd())
+files_and_dirs=os.listdir()
+files=[]
+directories=[]
+for item in files_and_dirs:
+  if os.path.isfiles(item):
+   files.append(item)
+  elif os.path.isdir(item):
+    directories.append(item)
+print("\n files:") 
+for file in files:
+  print(file)
+
+print("\n directories")
+for directory in directories:
+  print(directory)
+
